@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Convert_List_To_Grid_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4m7-XS-inP">
+                                <rect key="frame" x="20" y="94" width="374" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="max-5c-Dtb">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="7dG-bb-YuB"/>
+                                            <constraint firstAttribute="height" constant="85" id="gAw-Ko-dhi"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="grid_1"/>
+                                        <connections>
+                                            <action selector="gridListButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="53N-Ol-hO6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUX-dN-a7A">
+                                        <rect key="frame" x="144.5" y="0.0" width="85" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="aCB-LG-Bna"/>
+                                            <constraint firstAttribute="height" constant="85" id="uay-Zd-ThM"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="grid_2"/>
+                                        <connections>
+                                            <action selector="gridListButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gs1-Wb-F16"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBV-G1-Bpa">
+                                        <rect key="frame" x="289" y="0.0" width="85" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="85" id="jLp-M4-JQH"/>
+                                            <constraint firstAttribute="width" constant="85" id="slk-as-k4J"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="grid_3"/>
+                                        <connections>
+                                            <action selector="gridListButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uOi-5t-COa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b7J-87-nAQ">
+                                <rect key="frame" x="0.0" y="199" width="414" height="663"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ezq-SB-JnT">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4m7-XS-inP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="7IF-pb-suN"/>
+                            <constraint firstItem="b7J-87-nAQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LPI-HZ-dSA"/>
+                            <constraint firstItem="b7J-87-nAQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="O4m-1h-JuQ"/>
+                            <constraint firstItem="4m7-XS-inP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gpK-5u-zW7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4m7-XS-inP" secondAttribute="trailing" constant="20" id="hzX-mU-0KY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b7J-87-nAQ" secondAttribute="bottom" id="qV4-Ng-Vbu"/>
+                            <constraint firstItem="b7J-87-nAQ" firstAttribute="top" secondItem="4m7-XS-inP" secondAttribute="bottom" constant="20" id="yGq-Ry-Evz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="b7J-87-nAQ" id="gCb-kf-5C7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="grid_1" width="225" height="225"/>
+        <image name="grid_2" width="225" height="225"/>
+        <image name="grid_3" width="225" height="225"/>
+    </resources>
+</document>

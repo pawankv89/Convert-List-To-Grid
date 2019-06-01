@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gzs-Ng-5cH" customClass="GridCell" customModule="Convert_List_To_Grid_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHm-HP-dzK">
+                    <rect key="frame" x="5" y="70" width="90" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hcd-a5-hCd">
+                    <rect key="frame" x="20" y="5" width="60" height="60"/>
+                    <color key="backgroundColor" red="0.09479183703660965" green="0.60991877317428589" blue="0.099086962640285492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="3qv-H6-tTE"/>
+                        <constraint firstAttribute="width" constant="60" id="qTv-7O-HH1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.73333333329999995" green="0.1843137255" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pHm-HP-dzK" firstAttribute="leading" secondItem="gzs-Ng-5cH" secondAttribute="leading" constant="5" id="0pX-Ie-Cxk"/>
+                <constraint firstAttribute="bottom" secondItem="pHm-HP-dzK" secondAttribute="bottom" constant="5" id="6Tu-zT-kHv"/>
+                <constraint firstItem="hcd-a5-hCd" firstAttribute="top" secondItem="gzs-Ng-5cH" secondAttribute="top" constant="5" id="JCa-kf-q7g"/>
+                <constraint firstAttribute="trailing" secondItem="pHm-HP-dzK" secondAttribute="trailing" constant="5" id="ZtV-6b-SFQ"/>
+                <constraint firstItem="hcd-a5-hCd" firstAttribute="centerX" secondItem="gzs-Ng-5cH" secondAttribute="centerX" id="lmy-tv-5Ys"/>
+                <constraint firstItem="pHm-HP-dzK" firstAttribute="top" secondItem="hcd-a5-hCd" secondAttribute="bottom" constant="5" id="yGe-QV-iW9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="pHm-HP-dzK" id="fbS-q4-ZMw"/>
+                <outlet property="userImageView" destination="hcd-a5-hCd" id="ZRk-jx-yqm"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>
